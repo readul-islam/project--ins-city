@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <title>Insta-Sohor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous" />
+
+    <!-- google Montserrat  font  -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class="navbar-brand" href="#">Insta-Sohor</a>
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link active"
+                        role="button"
+                        onclick="switchTab( 'posts' )">
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+
+                    <li class="nav-link active"
+                        role="button"
+                        onclick="switchTab( 'liked' )">
+                        <i
+                            class="fa-solid fa-heart text-danger"></i>
+                    </li>
+
+                    <li class="nav-link active"
+                        role="button"
+                        onclick="switchTab( 'reported' )">
+                        <i
+                            class="fa-solid fa-eye-slash"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main container mx-auto p-3">
+        <div id="posts">
+        </div>
+        <div id="liked">
+            <h1>Liked posts</h1>
+        </div>
+
+        <div id="reported">
+            <h1>Reported posts</h1>
+        </div>
+    </main>
+    <div class="container border border-3 mt-5"></div>
+    <footer class="container mt-4">
+        <div
+            class="container pb-4 fst-italic d-flex justify-content-center">
+            <h2>Learn about <span
+                    class="text-info">JavaScript</span></h2>
+        </div>
+        <section>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                How dose
+                                Javascript Work?
+                            </h5>
+                            <p class="card-text">
+                                Javascript is an
+                                interpreted
+                                language and
+                                client-side
+                                scripting
+                                language .You know
+                                what this is'nt a
+                                complied
+                                language?.JavaScript
+                                has V8 Engine in
+                                Browser's.
+                                V8 Engine receive
+                                javascript code
+                                and the engine
+                                runs the source
+                                code to obtain the
+                                output. As we
+                                already know,
+                                JavaScript is an
+                                interpreted
+                                language that
+                                means it gets
+                                executed in line
+                                by line manner.
+                                The modern
+                                JavaScript engines
+                                also has JIT. I
+                                know, they have a
+                                compiler.As we
+                                already
+                                know, JavaScript
+                                is an interpreted
+                                language and they
+                                have a compiler
+                                that means it gets
+                                executed in line
+                                by line manner.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                How dose
+                                Javascript Event
+                                Loop work?</h5>
+                            <p class="card-text">
+                                javascript is
+                                single-threaded,
+                                but the browsers
+                                API act as separat
+                                threads. The Event
+                                Loop clear the way
+                                this process.the
+                                event loop work
+                                asynchronouslly .
+                                it continuously
+                                cheack Whether the
+                                call stack is
+                                empty.
+                                when the call
+                                stack empty then
+                                new functions are
+                                added from the
+                                event queue. If it
+                                is
+                                not, then the
+                                current function
+                                call is prepared.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                LocalStorage Vs
+                                SessionStorage
+                            </h5>
+                            <p class="card-text">The storage
+                                object save data in web
+                                browsers
+                                The localstorage shared data
+                                between all tabs and windows
+                                from the same origin.
+                                Localstorage data will not
+                                be expired when the browser
+                                is closed. But, The
+                                sessionStorage opposite the
+                                localstorage. Session
+                                storage lost data when the
+                                browser tab is closed.
+                                This is the main difference
+                                between local storage with
+                                sessionStorage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+    <!-- bootstrap js bundle  -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- add javascript  file  -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
